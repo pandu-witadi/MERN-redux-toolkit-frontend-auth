@@ -1,0 +1,36 @@
+{
+    "name": "mern-redux-toolkit-frontend-auth",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/",
+        "server": "nodemon src/ --ignore client",
+        "client": "npm start --prefix client_react",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "concurrently": "^7.1.0",
+        "cors": "^2.8.5",
+        "debug": "~2.6.9",
+        "dotenv": "^16.0.1",
+        "express": "~4.16.1",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.4.2",
+        "morgan": "~1.9.1"
+    },
+    "keywords": [
+        "kanban",
+        "clone",
+        "MERN",
+        "backend",
+        "node"
+    ],
+    "author": "P&U",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}
